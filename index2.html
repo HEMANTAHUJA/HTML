@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document12</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            border: 3px solid red;
+            height: 70vh;
+            display: flex;
+            /* align-items: start; */
+            /* flex-direction: column-reverse; */
+            flex-wrap: wrap;
+            /* gap: 10px; */
+            /* flex-flow:row wrap; */
+            justify-content: space-between;
+             align-items: flex-start;
+            align-content: flex-start; 
+        }
+        .Box{
+            
+            border: 3px solid green;
+            width: 100px;
+            /* margin: 10px; */
+            /* gap: 10px; */
+            flex-basis: 25%;
+
+
+        }
+        #Box-1{
+            /* flex-shrink: 2; */
+            /* flex-grow: 1; */
+            /* order:1; */
+            /* flex: 1 2 200px; */
+            align-self: flex-start;
+        }
+        #Box-2{
+            /* flex-basis: 300px; */
+            /* flex-shrink: 2; */
+            /* flex-grow:2; */
+            /* order:3; */
+        }
+    </style>
+</head>
+<body>
+       <!-- flex , grid,  -->
+        <div class="container">
+            <div class="Box" id="Box-1">Box-1</div>
+            <div class="Box" id="Box-2">Box-2</div>
+            <div class="Box" id="Box-3">Box-3</div>
+            <div class="Box" id="Box-4">Box-4</div>
+            <div class="Box" id="Box-5">Box-5</div>
+            <div class="Box" id="Box-6">Box-6</div>
+            <div class="Box" id="Box-7">Box-7</div>
+            <div class="Box" id="Box-8">Box-8</div>
+        </div>
+        <!-- .container.box#box -->
+</body>
+</html>

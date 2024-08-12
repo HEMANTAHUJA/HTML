@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <style>
+        body{
+            background-color:aquamarine;
+
+            
+        }
+        /* translate ,skew, rotate, scale */
+        /* Transform scale is used to incrase the size of the element by its value */
+        #container{
+            width: 400px;
+            height: 400px;
+            /* background-color: blue; */
+            border: 10px solid greenyellow;
+           border-radius: 50%;
+            /* transform: translateY(100px) */
+            /* transform: scaleY(2) */
+            /* transform: rotate(45deg) */
+            /* transform: skewY(50deg); */
+            /* skew is used to skew the element */
+            transition: 0.5s ease-in-out;
+            /* this transition property will apply in hover */
+            animation: spinner 2s linear infinite;
+        }
+        #box{
+               width: 100px;
+               height: 100px;
+               background-color: blueviolet;
+               /* transition: 1s linear; */
+               animation: ;
+        }
+        #container:hover #box{
+            transform: rotate(90deg);
+            background-color: slategrey;
+            border-radius: 100px;
+            border: 10px solid red;
+            transform: translate(100px , 100px);
+
+        }
+        #keyframes spinner{
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- transform -->
+     <div id="container">
+        <div id="box"></div>
+     </div>
+</body>
+</html>

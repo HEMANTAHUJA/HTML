@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Document4</title>
+    <style>
+        /* ul li:last-child{
+            background-color: aqua;
+        } */
+        ul li:nth-child(2n+1){
+         background-color: yellowgreen;
+        }
+
+        ::selection{
+            background-color: black;
+            color: blue;
+        }
+        /* #first::first-line{
+            background-color: blueviolet;
+            font-size: 30px;
+        } */
+         #first:hover::after{
+            content: "Hello techno";
+            background-color: brown;
+            padding: 2px;
+/* by usning before we get the para before the writtened para */
+         }
+    </style>
+</head>
+<body>
+    <!--pseudo elements - first letter,first line,before,after,selection -->
+    <!-- by using selection we get the result like color or background on selecting particular element and all element -->
+    <!-- nth child -->
+    <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li>item-7</li>
+        <li>item-8</li>
+    </ul>
+     <!-- <ul>
+        <li>List-1</li>
+        <li>List-2</li>
+        <li>List-3</li>
+    </ul>  -->
+    <p id="first" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestiae optio, consequuntur maiores officiis doloremque amet harum ullam excepturi molestias. Amet aliquid minima nihil corrupti! Magni, nemo. Exercitationem, maxime illo.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit tempore amet laudantium? Exercitationem sequi corrupti amet quasi vero fugit minima culpa. Assumenda saepe placeat consectetur esse reiciendis consequatur laboriosam molestiae?
+    </p>
+</body>
+</html>

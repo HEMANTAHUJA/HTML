@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Task1</title>
+    <style>
+        header {
+            border: 2px solid rgb(63, 63, 160);
+            background-color: rgb(63, 63, 160);
+            color: white;
+            height: 80px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .login-form {
+            display: flex;
+            align-items: center;
+        }
+        .login-form div {
+            margin: 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .login-form label {
+            color: white;
+            margin-bottom: 1px;
+        }
+        .login-form input {
+            margin: 0 10px;
+            padding: 2px;
+        }
+        .login-form button {
+            padding: 0 0px;
+        }
+        </style>
+
+</head>
+<body>
+    <header>
+        <div class="login-form">
+            <div>
+                <label for="email" style="padding-left: 10px;">Email or phone</label>
+                <input type="email">
+            </div>
+            <div>
+            <label for="password">Password</label>
+            <input type="password">
+            </div>
+            <button type="button">Log In</button>
+
+        </div>
+    </header>
+</body>
+</html>

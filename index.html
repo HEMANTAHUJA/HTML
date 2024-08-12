@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width,initial-scale=1.0">
+       <title>Document</title>
+      <link rel="stylesheet" href="./style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Sankofa+Display&display=swap" rel="stylesheet">
+       <style>
+      
+         #text{
+            background-color: purple;
+            padding: 20px;
+            border: 20px #8b4513;
+            font-size: 40px;
+            font-family: "Sankofa Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+            font-style: italic;
+            text-decoration: underline;
+            text-transform: uppercase;
+            text-align:center;
+            line-height: 2ch;
+            word-spacing: 0.5ch;
+            text-shadow: rgb(25, 19, 197) 1px 0 10px;
+         }
+         #main{
+            background-color: rgba(165, 42, 42, 0.795);
+         } 
+         /* p{
+            background-color: blue;
+         } */
+          /* #container{
+            width: 400px;
+             height: 100px; 
+            
+             margin: auto;
+             background-color: antiquewhite; 
+             border: 10px solid green;
+            border-radius: 10px;
+            box-shadow: 1px 1px 1px 1px black; 
+            text-shadow: #FC0 1px 0 10px;
+         } */
+          /* #container{
+            width: 300px;
+            height: 300px;
+            background-color: cornflowerblue;
+            border: 100px solid black;
+            font-size: 30px;
+            padding: 100px;
+            margin: 200px;
+          } */
+          /* #main1 ,#para1{
+            width: 300px;
+            height: 300px;
+            background-color: beige;
+            border: 100px solid black;
+            font-size: 30px;
+            padding: 100px;
+            margin: 200px;
+            box-sizing: border-box;
+
+          } */
+          #contain2 > p{
+            color: blueviolet;
+            font-size: 30px;
+            font-weight: 10px;
+          }
+          /* #para1{
+
+          } */
+           a[target="_blank"]{
+               font-size: 50px;
+           }
+           /* #container3{
+            height: 50vh;
+            width: 50vw;
+            background-color: cornflowerblue;
+           } */
+        #container4{
+         background-color: #8b4513;
+         width: 500px;
+         height: 100px;
+         /* font-size: 20px; */
+         display: inline;
+        }
+        #main4{
+            width: 500px;
+            height: 100px;
+            background-color: aqua;
+            display: none;
+            visibility: hidden;
+        }
+        #game{
+              background-color: blueviolet;
+              display: inline;
+        }
+        #contain5{
+            background-color: #8b4513;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            /* top: 0;
+            left: 0; */
+            bottom: 0;
+            right: 0;
+
+        }
+       </style>
+       <!-- in css in last if external css is written then it gets priority by overlapping each other -->
+       <!--# is used to create the css environment of that particular thing to use css-->
+       <!--first the id gt priority then class has priority and then tagname in order-->
+    </head>
+    <body>
+        <p id="text"; class="head"> MY FIRST PAGE </p>
+             <p id="main"; class="head">alternate</p>
+        <h1>Hello techno</h1>
+        <h2>Hello techno</h2>
+        <h3>Hello techno</h3>
+        <h4>Hello techno</h4>
+        <header></header>
+        <main></main>
+        <footer></footer>
+        <a href="https://www.google.com/"target="_blank">Google</a>
+        <a href="./About.html">About us</a>
+        <img src="https://imgs.search.brave.com/UcrBp-tJVWOKvBCykr9gAKanEXHnRS9UfI4ODhV-tms/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWdk/b3dubG9hZGVyLmNv/bS9zdGF0aWMvYXNz/ZXRzL2ltYWdlcy9z/dmcvZG93bmxvYWQt/Z29vZ2xlLWltYWdl/cy5zdmc" alt="">
+        <br>
+        <br>
+        <br>
+        <hr>
+        <p>H <sup>2</sup>O</p>
+        <p>H <sub>2</sub>O</p>
+        <div>HBDHB KJBASCHBC CKNDBCBBCBC
+            HJCBSH
+            JSBCBCBHJ
+        </div>
+        <SPan>snhjbdhbc
+            sbjhchj
+            sdbjhbdhjb
+        </SPan>
+        <!-- ordered and unordered-->
+         <ol>
+           <li>first</li>
+           <li>second</li>
+           <li>third</li>
+         </ol>
+         <!--ul tag can also be used-->
+         <!--html tags are only tag and html eleent are the content inside tags and including tags-->
+         <!--Table-->
+         <table>
+        <thead>
+           <tr>
+             <th>S.no</th>
+             <th>name</th>
+             <th>roll no.</th>
+             <th>SECTION</th>
+           </tr>
+        </thead>
+        <tbody>
+   <tr>
+      <td>1</td>
+      <td>hemant</td>
+      <td>101</td>
+      <td>A</td>
+   </tr>
+   <tr>
+    <td>2</td>
+    <td>priyesh</td>
+    <td>102</td>
+    <td>B</td>
+ </tr>
+ <tr>
+    <td>3</td>
+    <td>Sanmay</td>
+    <td>103</td>
+    <td>B</td>
+ </tr>
+        </tbody>
+         </table>
+         <form action="./About.html">
+         <input type="text" placeholder="Enter name" name="Fullname" >
+         <br>
+         <input type="password" placeholder="Enter password" name="password">
+         <input type="number" placeholder="Enter number" name="number">
+         <input type="file">
+         <input type="email" placeholder="Enter email" required>
+         <input type="checkbox">
+         <span>Agree</span>
+         <input type="date">
+         <input type="radio">
+         <!--void elements = self closing tags are void elements like br,hr,-->
+         <button type="submit">Submit</button>
+      <div id="container">regular</div>
+      <div id="main1">alternate box</div>
+      <div id="contain2">
+         <p id="para1">hello bro</p>
+         <p>H <sup>2</sup>O</p>
+         <a href="">instagram</a>
+      </div>
+      <!-- units- px,ch, -->
+       <!-- vw -- view port width
+            vh -- view port height -->
+       <!-- <div id="container3"></div> -->
+       <div id="container4">hellobrother im fine
+         <!-- <div id="main4">jhvghv uyguir uheruighr uiruigh ubrguigb ubrguigh iubr 
+            iuib rebguib iubgri b iurgbh uhbruig
+         </div> -->
+       </div>
+       <select name="" id="">
+         <option value="">udaipur</option>
+         <option value="">kota</option>
+         <option value="">alwar</option>
+       </select>
+       <div id="main4">jhvghv uyguir uheruighr uiruigh ubrguigb ubrguigh iubr 
+         iuib rebguib iubgri b iurgbh uhbruig
+      </div>
+      <div>kbhjbbv jbnerbb jbini bererb  hjerfbjbe rbbniber ff b jer fj rhjb </div>
+       <!-- <span>hello with me </span>
+       <span>why me</span>
+       <div id="game">Yes this is inline view</div> -->
+       <!-- positions -- absolute, relative,  -->
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aliquam illum possimus tenetur animi voluptatum numquam, voluptates soluta aperiam culpa! Eaque excepturi odio libero unde vel voluptatem doloremque culpa voluptate!</div>
+        <div id="contain5"></div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate reprehenderit eos voluptates excepturi iste totam necessitatibus enim facere, voluptatum, amet minima dolorem fugiat repudiandae tempore, soluta debitis earum alias.</div>
+    </body>
+    <!-- in css the display inline uses width and height -->
+</html>
