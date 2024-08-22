@@ -182,8 +182,3 @@ let result = arr.forEach((item , i)=>{
     // return item;
 })
 console.log(result);
-
-
-
-
-
