@@ -101,31 +101,31 @@
 // promises
 // promise is a ibject which contain multiple values like promise state 
 
-// function fetchdata(){
-//     return new Promise((resolve , reject)=>{
-//         setTimeout(()=>{
-            // let data = {
-            //     firstNamr : "hemant",
-            //     lastName : "ahuja"
-            // };
-            //   return reject(data);
-//             try{
-//    let data = {
-//                 firstNamr : "hemant",
-//                 lastName : "ahuja"
-//             };
-//               return resolve(data);
-//             } catch (error) {
-//                return reject(error);
-//             }
-//         },2000);
-        // let data = {
-        //     firstNamr : "hemant",
-        //     lastName : "ahuja"
-        // };
-        // return resolve(data);
-//     })
-// }
+function fetchdata(){
+    return new Promise((resolve , reject)=>{
+        setTimeout(()=>{
+            let data = {
+                firstNamr : "hemant",
+                lastName : "ahuja"
+            };
+              return reject(data);
+            try{
+   let data = {
+                firstNamr : "hemant",
+                lastName : "ahuja"
+            };
+              return resolve(data);
+            } catch (error) {
+               return reject(error);
+            }
+        },2000);
+        let data = {
+            firstNamr : "hemant",
+            lastName : "ahuja"
+        };
+        return resolve(data);
+    })
+}
 
 // let fetchedata = fetchdata();
 // console.log(fetchdata);
@@ -172,7 +172,8 @@
 //     .then((data)=>{
 //         data.foreach((item)=>{
 //             let newDiv = document.createElement("div");
-//             newDiv.innerHTML = '<img style=;
+//             newDiv.innerHTML = '<img style='width : 100px' src=${item.image}
+        //      alt='Product-Image';
 //             let mydiv = document.getElementById("products");
 //             mydiv.appendChild(newDiv);
 //         })
@@ -181,3 +182,20 @@
 //         console.log(error);
 //     })
 // })
+
+
+// async await
+
+// async function fetchUserdata(){
+//       let response = await fetchdata();
+//       console.log(response);
+//    try{
+//         let response = await fetchdata();
+//         console.log(response);
+//    }
+//    catch(){
+
+//    }
+// }
+
+// fetchUserdata();
