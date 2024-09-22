@@ -1,0 +1,41 @@
+<!-- 5. Create a simple HTML form with input fields for a user's name and email. Write JavaScript to
+display a message below the form that says 'Thank you for submitting, [name]!' when the form is
+submitted. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+</head>
+<body>
+
+    <h2>Submit Your Info</h2>
+
+    <form id="userForm" onsubmit="displayMessage(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="thankYouMessage"></p>
+
+    <script>
+        function displayMessage(event) {
+            event.preventDefault(); // Prevents form from submitting to a server
+            
+            // Get the value of the name input field
+            const name = document.getElementById('name').value;
+            
+            // Display the thank you message
+            const message = `Thank you for submitting, ${name}!`;
+            document.getElementById('thankYouMessage').textContent = message;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- 8. Write a program that retrieves the value of an input field and displays it in another part of the
+document when a button is pressed. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Input Value</title>
+</head>
+<body>
+
+    <label for="inputField">Enter something:</label>
+    <input type="text" id="inputField" placeholder="Type here">
+    
+    <button id="displayButton">Display Value</button>
+
+    <p id="output"></p>
+
+    <script>
+        document.getElementById('displayButton').addEventListener('click', function() {
+            // Get the value from the input field
+            const inputValue = document.getElementById('inputField').value;
+            
+            // Display the value in the paragraph
+            document.getElementById('output').textContent = `You entered: ${inputValue}`;
+        });
+    </script>
+
+</body>
+</html>

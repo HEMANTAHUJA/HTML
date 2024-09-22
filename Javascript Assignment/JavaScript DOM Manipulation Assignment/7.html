@@ -1,0 +1,35 @@
+<!-- 7. Create an HTML element with a class of 'hidden'. Write a JavaScript function that toggles this
+class when a button is clicked, showing and hiding the element. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Visibility</title>
+    <style>
+        /* The hidden class hides the element */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="toggleElement" class="hidden">
+        This is a toggleable element.
+    </div>
+
+    <button id="toggleButton">Show/Hide Element</button>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function() {
+            // Get the element by its ID
+            const element = document.getElementById('toggleElement');
+            
+            // Toggle the 'hidden' class
+            element.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

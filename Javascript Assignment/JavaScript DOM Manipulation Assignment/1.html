@@ -1,0 +1,23 @@
+<!-- 1. Create an HTML file with a paragraph element. Write a JavaScript function to change the text
+content of the paragraph when a button is clicked. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Paragraph Text</title>
+</head>
+<body>
+    <h1>Change Text Example</h1>
+
+    <p id="myParagraph">Hello this is me.</p>
+
+    <button onclick="changeText()">Click me to change text</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("myParagraph").textContent = "The text has been changed!";
+        }
+    </script>
+</body>
+</html>

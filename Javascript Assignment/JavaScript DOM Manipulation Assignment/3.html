@@ -1,0 +1,39 @@
+<!-- 3. Write a JavaScript program that creates a new <li> element with some text and adds it to an
+    existing <ul> list when a button is clicked. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add List Item</title>
+</head>
+<body>
+
+    <h2>My List</h2>
+
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <button onclick="addListItem()">Add New Item</button>
+
+    <script>
+        function addListItem() {
+            // Create a new li element
+            const newItem = document.createElement("li");
+
+            // Add text content to the new li element
+            newItem.textContent = "Added!";
+
+            // Get the existing ul element by its ID
+            const list = document.getElementById("myList");
+
+            // Append the new li element to the ul
+            list.appendChild(newItem);
+        }
+    </script>
+
+</body>
+</html>

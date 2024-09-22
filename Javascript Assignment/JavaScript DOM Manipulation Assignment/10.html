@@ -1,0 +1,35 @@
+<!-- 10. Write a JavaScript program that automatically updates the content of an element every second,
+displaying the current time. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time Display</title>
+</head>
+<body>
+
+    <h2>Current Time</h2>
+    <p id="timeDisplay"></p>
+
+    <script>
+        function updateTime() {
+            const now = new Date(); // Get the current date and time
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+
+            // Format the time as HH:MM:SS
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            
+            // Update the content of the timeDisplay element
+            document.getElementById('timeDisplay').textContent = timeString;
+        }
+
+        // Update the time immediately and then every second
+        updateTime(); // Initial call
+        setInterval(updateTime, 1000); // Update every second
+    </script>
+
+</body>
+</html>

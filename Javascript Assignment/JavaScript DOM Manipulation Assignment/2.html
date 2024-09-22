@@ -1,0 +1,38 @@
+<!-- 2. Write a program that changes the background color of a <div> element to blue when the mouse
+    hovers over it. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background on Hover</title>
+    <style>
+        #myDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+            text-align: center;
+            line-height: 200px;
+            border: 1px solid black;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="myDiv">GET YOUR CURSOR</div>
+
+    <script>
+        const myDiv = document.getElementById("myDiv");
+
+        myDiv.addEventListener("mouseover", function() {
+            myDiv.style.backgroundColor = "blue";
+        });
+
+        myDiv.addEventListener("mouseout", function() {
+            myDiv.style.backgroundColor = "lightgray";
+        });
+    </script>
+
+</body>
+</html>
