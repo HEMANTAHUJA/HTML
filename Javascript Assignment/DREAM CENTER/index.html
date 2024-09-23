@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Center</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .donate-button {
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWg3AyOzrUuu3ZPUE1ZgzyMCSfoVv_xum6XQ&s'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding: 50px;
+        }
+
+        .hero-content {
+            text-align: right;
+            color: white;
+            max-width: 600px;
+            padding: 20px;
+            background: none; /* Add a translucent background to improve readability */
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #333;
+        }
+
+        /* Footer / Newsletter Section */
+        .newsletter {
+            background-color: #f4f4f4;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .newsletter h3 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            width: 300px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .newsletter button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="data:image/jpeg;base64,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" alt="Logo"> <!-- Add your logo here -->
+            <h2>Dream Center</h2>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">What We Do</a>
+            <a href="#">About Us</a>
+            <a href="#">Contacts</a>
+            <button class="donate-button">Donate Now</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Making More of Every Gift</h1>
+            <p>No child should be forgotten</p>
+            <button>What We Do</button>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h3>Sign Up & Stay Connected</h3>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+</body>
+</html>

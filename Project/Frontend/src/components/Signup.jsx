@@ -1,8 +1,11 @@
 // import { yupResolver } from '@hookform/resolvers/yup';
 import { zodResolver } from '@hookform/resolvers/zod';
+import axios from 'axios';
 import React from 'react'
 import { useForm } from 'react-hook-form'
+import { useDispatch } from 'react-redux';
 import { z } from 'zod';
+import { setError, setLoading, setSuccess } from '../redux/authSlice';
 
 const Signup = () => {
     const validationSchema = z.object({
@@ -14,13 +17,21 @@ const Signup = () => {
         .regex(/[0-9]/,"Password must contain atleast 1 Number")
         .regex(/[\w_]/,"Password must contain atleast 1 Specil Character"),
         phoneNumber : z.string().min(1,"Phone number is required")
-    })
+    });
+
+    const dispatch = useDispatch();
 
     const { register , handleSubmit, formState : {errors} } = useForm({
         resolver : zodResolver(validationSchema)
     });
-    const onSubmit = (data)=>{
-        console.log(data);
+    const onSubmit = async (data)=>{
+        dispatch(setLoading());
+        try{
+            const response = await axios.post("http://localhost:5000/auth/signup",data);
+            dispatch(setSuccess(response.data.data))
+        } catch(error){
+            dispatch(setError(error));
+        }
     }
     return (
         <div className='flex w-[90%] h-4/5 justify-between items-center bg-white shadow-2xl'>

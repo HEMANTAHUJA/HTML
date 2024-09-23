@@ -1,5 +1,5 @@
 const User = require("../model/user");
-const bcrypt = require()
+const bcrypt = require("bcrypt");
 
 exports.signup =async (req,res, next)=>{
     try{
@@ -19,7 +19,7 @@ exports.signup =async (req,res, next)=>{
             phoneNumber: phoneNumber
         });
         await newUser.save();
-        res.status(201).send({message: "user created"});
+        res.status(201).send({message: "user created",data : newUser});
     } catch(error){
          
         if(error.name === "ValidationError"){

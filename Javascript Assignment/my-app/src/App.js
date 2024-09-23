@@ -8,8 +8,8 @@
 import React, { useState } from 'react';
 // import ColorPicker from './ColorPicker';
 // import TextInput from './TextInput'; 
-// import ToggleSwitch from './ToggleSwitch';
-import TodoList from './TodoList';
+import ToggleSwitch from './ToggleSwitch';
+// import TodoList from './TodoList';
 
 const App = () => {
     // 7
@@ -31,18 +31,20 @@ const App = () => {
 
 
     // 9
-    // const [isToggled, setIsToggled] = useState(false);
+    const [isToggled, setIsToggled] = useState(false);
 
-    // const handleToggleState = () => {
-    //     setIsToggled((prev) => !prev); // Toggle the state
-    // };
-    const todos = [
-        'Learn React',
-        'Build a Todo App',
-        'Understand Props and State',
-        'Practice with Components',
-        'Deploy the App'
-    ];
+    const handleToggleState = () => {
+        setIsToggled((prev) => !prev); // Toggle the state
+    };
+
+    // 10
+    // const todos = [
+    //     'Learn React',
+    //     'Build a Todo App',
+    //     'Understand Props and State',
+    //     'Practice with Components',
+    //     'Deploy the App'
+    // ];
 
     return (
         // 1
@@ -104,19 +106,19 @@ const App = () => {
 //</div>
 
 // 9
-//<div style={{ textAlign: 'center', margin: '20px' }}>
-//<h1>Toggle Switch Example</h1>
-//<ToggleSwitch toggleState={handleToggleState} />
-//<h2 style={{ marginTop: '20px' }}>
-//    Switch is {isToggled ? 'ON' : 'OFF'}
-//</h2>
-//</div>
+<div style={{ textAlign: 'center', margin: '20px' }}>
+<h1>Toggle Switch Example</h1>
+<ToggleSwitch toggleState={handleToggleState} />
+<h2 style={{ marginTop: '20px' }}>
+   Switch is {isToggled ? 'ON' : 'OFF'}
+</h2>
+</div>
 
 // 10
-<div style={{ textAlign: 'center', margin: '20px' }}>
-<h1>Todo List Example</h1>
-<TodoList todos={todos} />
-</div>
+//<div style={{ textAlign: 'center', margin: '20px' }}>
+//<h1>Todo List Example</h1>
+//<TodoList todos={todos} />
+//</div>
 );
 };
 

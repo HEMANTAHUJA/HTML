@@ -1,0 +1,45 @@
+10.  Which of the following elements in HTML5 defines video or movie content?
+ans.
+The <video> element in HTML5 is specifically designed to embed video content in a webpage.
+
+
+
+11. Which tag is used to create a dropdown in HTML Form?
+ans.
+The <select> tag is used to create a dropdown menu in an HTML form.
+
+
+
+12. How do we write comments in HTML?
+ans. In HTML, comments are written using the following syntax: <!-- Comment here -->. Anything between <!-- and --> will be ignored by the browser.
+
+
+13. Apart from <i> tag, which of the following tag is used to render a text in italics?
+ans. The <em> tag is used to emphasize text, which typically renders it in italics. While the <i> tag also renders text in italics, <em> conveys semantic meaning related to emphasis.
+
+
+14. Which tag allows you to add a row in a table?
+ans. The <tr> tag is used to define a row in a table in HTML. Inside a <tr>, you can use <td> for regular cells or <th> for header cells.
+
+
+ 15. Which of the following is an inline-level HTML element?
+ ans. 
+None of the options listed are inline-level HTML elements. The correct answer should be an element like <span>, which is an inline element.
+
+
+16. What is the purpose of the <head> tag in an HTML document?
+ans. The <head> tag contains metadata, the page title, links to stylesheets, and scripts. It helps the browser process the document correctly.
+
+17. What is the purpose of the <doctype> declaration in an HTML document?
+ans. The <doctype> declaration specifies the HTML version being used and helps the browser render the page correctly.
+
+18. Which HTML element is used to define the structure of a table?
+ans. 
+The <table> element is used to define the structure of a table in HTML.
+
+19. What is the purpose of the alt attribute in the <img> tag?
+ans. The alt attribute provides alternative text for an image, which is displayed if the image cannot be loaded. It also helps with accessibility for screen readers.
+
+20. What is the purpose of the <footer> tag in an HTML document?
+ans. 
+The <footer> tag defines the footer section of a webpage, typically containing information like copyright, author details, links, and contact information.
