@@ -1,12 +1,10 @@
-// const { createStoreHook } = require("react-redux");
 import { configureStore } from "@reduxjs/toolkit";
-import authSlice from "./authSlice";
+import authSlice from "./slices/authSlice";
 
 const store = configureStore({
-    reducer: {
+    reducer : {
         auth : authSlice
     }
-
 });
 
 export default store;
